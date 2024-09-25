@@ -1,0 +1,14 @@
+Maahir Vohra CS288
+
+Problem 1:
+For problem 1, I first echo'd the greeting and rules. Then I asked for user input (rock, paper, scissors). Then, for
+player 2 I knew to use modulus 3 and use a switch case to assign 0, 1, and 2 to rock, paper, and scissors. After that, 
+I had both players choices. I then was going to use a switch case again for each possible combination. But then I 
+realized that I needed a loop so that if its a tie I can have a boolean value that'll keep it running until its not a tie. 
+So, I created a while loop and a "boolean" is_tie set to 0 for true. I looped through until it wasn't a tie, I'd print 
+out the winner, and then set is_tie to 1. I could have used a break statement but I wanted the code to be clear. 
+As for determining the winner, I just wrote out the combinations and then created if statements to determine the 
+winner by comparing the string value for player 1 and player 2. Lastly, I just turned all the code before the while loop
+besides the greeting into a function so that I could call it from the while loop.
+
+Problem 2:
