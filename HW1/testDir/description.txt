@@ -33,12 +33,3 @@ the stat and -c%s flag. This gave me excatly what I needed. Then, I checked if "
 printed out the name of the object (using basename) and the size. This looks a lot better than using ls -lh.
 
 Problem 3: ------------------------------------------------------------
-First I checked to see if user put at least 3 command line arguments. Then created the backup directory using date function. 
-Then a for loop that checks if file exists using -e flag. If it exists, copy command with that file and the new directory 
-I just made with the file at the end (directory/file.txt). When you do it like this, you can change the name of the file 
-so that is what I did using the date function again. Then, in that same for loop, I changed the directory to the new one.
-I touched a log.txt file and used >> and echo along with the variables. The else statement just prints warning file doesn't 
-exists and skips that iteration. At the end, I printed out the success message. Then, I cd'd into the new directory so that 
-I could use the pwd command to print out the full path. 
-
-Problem 4: ------------------------------------------------------------

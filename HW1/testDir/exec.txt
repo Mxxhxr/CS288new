@@ -1,0 +1,6 @@
+nt=$(wc -m < $fileOrDir)
+        
+        echo "Word count: $wordCount"
+        echo "Line count: $lineCount"
+        printf "Character count: $charCount\n\n"
+        
