@@ -42,3 +42,19 @@ exists and skips that iteration. At the end, I printed out the success message. 
 I could use the pwd command to print out the full path. 
 
 Problem 4: ------------------------------------------------------------
+For problem 4, I started with just having the user input a directory. If it exist, move on but if it doesnt, ask if they want
+to make it using mkdir. Next, I created a function that prints the menu out. I knew I needed to do this so that I could use a
+while loop. If the user says exit then the script ends. I have a case using grep which basically is any number from 0 to 9 zero
+or more times. So basically any number from 0 to infinity. I learned this trick for cases in my old 288 class. Its a good way to 
+knock out the problem of trying to use a case switch when you don't know how many "cases" there actually are. In this case we don't
+know how many objects will be in the menu. Next I have an if statement checking if the selection is a file or directory. I started 
+with the file first because its easier. I got the total lines and used tail -n and the + symbol. This let me choose what line I want 
+to start at. I then piped that into head -n 10. Which shows the first 10 lines of the file. But since I piped it im essentially printing
+out the entire file starting from where I want. And then using head to only show the first 10 lines of that output. Basically allowing me 
+to show any given 10 lines starting from where I want. This is in a while loop. So I then ask if the user wants to see the next 10 lines,
+if they say no, then break. I then increment +10 to the startLine variable so I can keep track of where to start next time they ask. Next,
+I failed to complete the directory part. I know I needed a function because it's asking for recursion. I suck at recursion so I wasn't able
+to complete it. But essentially, if its a directory then print out the objects and let them choose one. If its a file then do excatly what 
+I did for the file part (printing out 10 lines at a time etc.). If its a directory then we need to use the recursive function which I didn't 
+complete, so I kind of guessed as to what the code would look like if I completed the function. But essentially it would recursively search 
+for all files modified within 24hrs and use stat and date command to find when files were modified within past 24hrs.
