@@ -1,0 +1,4 @@
+Problem 1:
+A: know i needed -i for case sensitivity. Then, i just basically said an a followed by zero or more
+characters followed by an a followed by zero or more characters followed by an a. This basically
+just looks at each work for 
