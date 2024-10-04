@@ -1,4 +1,27 @@
 Problem 1:
-A: know i needed -i for case sensitivity. Then, i just basically said an a followed by zero or more
-characters followed by an a followed by zero or more characters followed by an a. This basically
-just looks at each work for 
+A ---> I knew I needed -i for case sensitivity. Then, i just basically said an a followed by zero or more
+characters followed by an a followed by zero or more characters followed by an a. This only searches
+for 3 a's minimum. The .* is zero or more of any character so it catches other a's as needed.
+B ---> This one I simply started with 3 e's. Then, in between these e's I put a non e character. And after 
+that I realized it can seperated by AT LEAST one non e char. So I just put a + to say 1 or more non e char.
+C ---> The breakdown of the problem provided was helpful. First I just did normal regex to get two adjacent e's.
+Then, I piped those words into sed, which then substituted the word with the last 3 letters of that word. Then,
+I piped that into sort which sorted alphabetically. Then I used uniq -c which counted all the unique last 3 letters.
+Then, sort -nr to sort by frequency descending. Then, I piped that into head -n 3 which gave me the 3 first lines in
+the output, which is the answer. 
+----------------------------------------------------------------------------------------------------------
+Problem 2: Breaking this problem down into 4 parts. First easy to count the lines containing 
+scanf or printf using grep and storing in a variable and printing it out. Then, check if 
+scanf/printf_log.txt exist, if it doesn't, create it. Then, now that we have the file (whether
+it was created or already there) we use the append command >> and append the lines by making a 
+for loop and appending the data using the grep statement. After that, do our calculations for 
+percentage (im assuming two seperate percentages). Bash is weird, I just learned it doesn't
+support floats? Thats why the percentages are an integer. I also use wc for total lines, the <
+removes the file name. Then, I printed out everything.
+----------------------------------------------------------------------------------------------------------
+Problem 3: I made the recursive traversal that also did the pattern matching inside of it. So everytime it came across
+a file, it would find all valid emails then pipe that into sort and uniq. Then, afterwards. I had to uniq and sort
+again because if two files have same emails all of them get put into the unique emails file. So thats why I had
+to sort and do a uniq on it again. Then I had to use tee (i found on google) that take the files in, then
+basically rewrites it to the file. Then, it kept spitting out the files in command line. So I looked up how to 
+stop that and came across dev/null.
