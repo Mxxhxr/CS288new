@@ -25,3 +25,14 @@ again because if two files have same emails all of them get put into the unique 
 to sort and do a uniq on it again. Then I had to use tee (i found on google) that take the files in, then
 basically rewrites it to the file. Then, it kept spitting out the files in command line. So I looked up how to 
 stop that and came across dev/null.
+----------------------------------------------------------------------------------------------------------
+Problem 4: 
+First I read the file using IFS I learned last semester 288. Then, for each line, I wrote the 
+regex to determine if the city is two or more words. Then, I made this into an if statement so
+that I could append that line to an array. Next, I made a associative array aka a dictionary
+so that I could store key value pair of Name: Age. Then I looped through the first array so 
+im now looping through each line that the regex determines was valid. Then, I used sed's 
+substitution and substitued the whole line with just the DOB. Then, I had to cut using a delimiter
+so that I could get just the year. In the same for loop, I used sed substitution to get the name.
+Then I did current year - birthYear. And stored the name and age in the 'dictionary'
+Then I made a for loop that printed out the Name: Age while also sorting it.
