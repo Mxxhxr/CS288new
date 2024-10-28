@@ -1,0 +1,32 @@
+#1
+So for the first problem, I kind of knew what I needed to do. I already learned floating points 
+in CS350 so I had a good basis of what needed be done. So the input is max 100 numbers which is 
+what I defined at the top. I first started with my main, I got the input needed. Even though the 
+assignment said we can assume its between 1 and 100, I made a check anyways (can never be too 
+safe). Then I called radix sort, which at the time wasn't implmeneted, i just knew it needed to 
+go there. Then I printed the radix sort. Next I worked on my radixSort function. I looked at the 
+radix sort general function from the slides but a lot was changed because we are working with 
+binary floating point numbers. I think we learned malloc but I already know it from last year 
+so I used it anyways. I dynamically allocated memoery for the buckets of type unsigned. I 
+did the algorithm and I needed a helper function to join the buckets. I converted the unsigned
+int back to floating point. I ran tests and almost continued on with the next problem. But 
+after using the bash script provided to test, I realized i didnt even take into account the 
+negative numbers. Luckily it was an easy addition. I just flipped the first bit when converting
+them to unsigned ints then flipped it again when converting back to decimal. LAstly, I freed the 
+memory and printed it out. Also, I stopped printing after 2 decimal places. THIS IS AN EASY CHANGE
+I just thought it looked cleaner. It also still gets sorted properly its just formatting the printing 
+of it.
+
+
+#2
+Same idea as 1 but now with integers and we are uses 16 buckets for hexadecimal. The 
+negative numbers had to be dealt with differently. I seperated neg and pos numbers
+into seperate arrays. Negative nums were converted to positive to sort and then flipped back
+when done sorting and place in reverse order. Also i had 16 buckets and processed the int
+4 bits at a time. I also got rid of the sorting helper function. I also got rid of all the
+text output that I had before because this problem specifically says that I can't have 
+ANYTHING other than the SORTED integers with no additional text. Now, there is also the input
+numbers, I can't get rid of that so hopefully that doesn't cause any problems.
+
+Doing this second problem basically helped me improve and I could also implement these
+improvements to problem 1 to make it better.
