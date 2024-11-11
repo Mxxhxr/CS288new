@@ -1,0 +1,20 @@
+Problem 1:
+For this problem, the hard part for me was to access the memory addresses. Once I got the hang of 
+that, the rest was mostly about formatting it right. The first two parts were easy. The last one 
+I had some difficulties with the pointer not behaving the way I wanted them to. But with some 
+thinking, I was able to figure it out. Also I noticed in the example that it begins to access 
+memory outside of our scope. Mine does that too but I kept it like that because his also does that.
+There wasn't any specifications regarding that so I don't expect any points off for that.
+-------------------------------------------------------------------------------------------------
+Problem 2:
+For this problem I honestly just followed the slides. With some slight changes it was pretty much 
+done. The instructions for this are extremely vague so if I get points off for something that 
+was not specified I'd like a formal explanation as to why.
+-------------------------------------------------------------------------------------------------
+Problem 3:
+I don't know why I decided to do bubble sort. I already know it and its relavitely simple compared 
+to other sorting algorithms. So, I went for it. I made a swap function. I also made a duplicate 
+of each enviornment variable being sorted just in case because they look like some of them are
+actually important so I didn't want to mess anything up so I just took the extra time to do that.
+Then I just used a simple bubble sort and sorted it by saying if strcmp a, b then swap(a,b).
+I freed the memory and looped through and printed it all out and that was about it.
