@@ -1,0 +1,21 @@
+Problem 1:
+It was honest simple. The only parts I had difficult with were the fact that were 
+using binary files. I simply read the first int of each matrix and stored that in n1 and n2
+respectively. Then, I read the rest of the ints (n cubed) into my 3D arrays.
+Then I did three nested loops and just multiplied each iteration of both 3D arrays
+and stored it in the new matrix. Then, i just wrote it to a new file. I was going to 
+turn my reading the binary file into a function, and maybe dynamic memory alloction 
+but there wasn't really a need to create it into a function, and we didn't learn malloc yet.
+------------------------------------------------------------------------------------------
+Problem 2:
+
+So obviously it was going to be recursive. A lot of this was similar to the PA's in CS280.
+I made a function that counted the lines in a file which was almost word for word similar
+to some code from one of the PA's. Then, the traverse directory function which required me
+to have to look up some stuff. Mostly because I don't use them a lot and couldn't rememeber 
+the names. I think we learned structs in class so I used two here. But both of them are
+predefined and help with dealing with directories and files. I defined a MAX_LENGTH for the
+path. If the path was too long I didn't know if we should continue (aka skip) or exit the 
+program? In the end, if file was .txt, append total lines with the function total lines.
+In main I just ask for file name and I wrote 2 lines to ignore a ./ if the user puts that in.
+I hope it doesn't mess anything up but I also don't know if its needed.
