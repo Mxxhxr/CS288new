@@ -1,0 +1,23 @@
+Problem 1:
+Reading input and creating the linked list is simple. The important part is to make sure
+you are linking it correctly. Simply check if the head is null. If so, the list is empty so the current
+node is the head and tail. Else, the tails next points to the current node and the tail is the new node. 
+I made a function to print it since I knew I would have to print it twice anyways. A simple while loop
+checks if the current node is empty. I "iterate" to the next node by saying current is now current->next.
+For reversing the list I feel like creating a new linked list is execessive but its part of the assignment.
+I just made another function to reverse it. First I created a new list called reverseHead. I set it to null.
+Then, I made a current pointer that initializes to head of the original list. In the while loop I said if the 
+new list's current is not null, then initiliaze the new lists next to the new lists current->next.
+Then, I had to insert the node at the front of the list. So I said the new lists current-> next is
+the NULL. And the new lists head is the new lists current. Then, the new lists current is equal to the new lists next.
+Its simple logic. I then had to change the return type from void to struct node and return the reverse head. Then in main
+i set head to the reverselist function. I knew my logic was right but I had some trouble implementing the fucntion in main.
+But I ended up figuring it out. Then I freed everythign.
+------------------------------------------------------------------------------------------
+Problem 2:
+For this one, I copied the print and basically all of main from problem 1. The main difference here is
+bubble sort. My approach to this problem was to write bubble sort normally, then convert the variables etc.
+to line up with the linked list. It kind of got messy but eventually it worked out. If I were to do it again,
+I would write bubble sort and just reference it instead of trying to replace things because obviously it wasn't
+word for word the same. I also used a swap flag to determine whether something was swapped or not. I did use a nested
+while loop which kind of lines up to bubble sort using a nested for loop.
