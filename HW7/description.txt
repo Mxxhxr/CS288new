@@ -1,0 +1,10 @@
+Problem 1:
+First implement the swap function which swaps the tiles. Then, the update_fgh, which computes f,g,h values
+for nodes. H's manhattan distance is the hueristic value. Expand function fills succ_nodes with valid moves
+of the blank tile which is up down left right. Then, for the A* logic, we need to expand the node with the smallest
+f value. Terminate when the goal state matches the current node and print the solution. For merge to open i made sure 
+to insert value succesors into the list, then continously keep the list sorted by the f value of the nodes. This is critical,
+as it basically allows the A* algo to know where to go next. For the results, my path length is always one more than what is 
+expected. That is because the skeleton code increments pathlen on line 277 when it shouldn't be inside the 'do'.
+Other than that, everything else went rather smoothly. I didn't come across many issues since I remember A* so well from 288 
+with Itani. I studied it like crazy cuz I wanted to pass the class.
