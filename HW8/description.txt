@@ -1,4 +1,18 @@
 Problem 1:
-
-
+So first I basically wrote the code without the use of MPI. This code isn't anything 
+complicated or new. The count sort is simple and I used gendatai and checkdatai and 
+confirmed that everything is working as it should be. This saves me from the hassle
+of trying to implmenet MPI and the problem at hand at the same time. It wasn't that bad of an approach.
+The begenning and ending were easy. Where all I had to do was initialize and finalize mpi. But having to
+broadcast an scatter as well as 2 buffers complicated things more than I wanted it to. I put a lot of checks
+just incase anything were to go wrong I could weed out the "easier" errors like opening a file error etc.
+I was getting errors because it coulnd't distribute evenly and the fix for that took me quite some time.
+And as per the HW, im assuming for grading this assignment that the number of ints and the number of processes
+will be divisible. I also commendted our the include mpi because my machine was being wierd but i put it back 
+before submitting.
+---------------------------------------------------------------------------------------------------------
 Problem 2:
+Threads to me is a lot more intuitive and makes more sense than using MPI. Essentially
+I made a struct then I just created a function for cacluating pi with the use of threads.
+Then, in main, i just created the threads and used the calculatePi function. Then at the end,
+I joined the threads using the join function and then i did the final calculation of pi and thats it.
